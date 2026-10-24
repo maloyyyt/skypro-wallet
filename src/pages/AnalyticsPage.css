@@ -1,0 +1,11 @@
+.analytics-grid {
+  display: grid;
+  grid-template-columns: 1fr 2.09fr;
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+}
