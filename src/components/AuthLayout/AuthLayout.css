@@ -1,0 +1,109 @@
+.auth {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth__header {
+  padding: 24px 0;
+}
+
+.auth__main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px 64px;
+}
+
+/* карточка */
+.auth-card {
+  width: 100%;
+  max-width: 379px;
+  box-sizing: border-box;
+  padding: 36px 32px;
+  background: #fff;
+  border-radius: 30px;
+  box-shadow: 0 20px 67px -12px rgba(0, 0, 0, 0.13);
+}
+
+.auth-card__title {
+  margin: 0 0 32px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: #000;
+}
+
+/* форма */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-form__error {
+  margin: 6px 0 0;
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+  color: #f25f5c;
+}
+
+/* кнопка */
+.auth-button {
+  height: 40px;
+  margin-top: 12px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  background: #7334ea;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.auth-button:hover:not(:disabled) {
+  background: #5e22d3;
+}
+
+/* неактивная кнопка */
+.auth-button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+/* ссылка внизу */
+.auth-card__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #999;
+}
+
+.auth-card__link {
+  color: #999;
+  text-decoration: underline;
+}
+
+.auth-card__link:hover {
+  color: #7334ea;
+}
+
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 28px 20px;
+    border-radius: 24px;
+  }
+
+  .auth-card__title {
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+}

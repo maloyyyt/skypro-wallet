@@ -1,0 +1,63 @@
+.auth-input {
+  position: relative;
+}
+
+.auth-input__field {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 0 14px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1;
+  color: #000;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  outline: none;
+  transition:
+    background-color 0.15s,
+    border-color 0.15s;
+}
+
+.auth-input__field::placeholder {
+  color: #6b6b6b;
+}
+
+/* поле заполнено — верные данные */
+.auth-input__field:not(:placeholder-shown) {
+  background: #f1ebff;
+  border-color: #a47cf0;
+}
+
+.auth-input__field:focus {
+  border-color: #7334ea;
+}
+
+/* поле с ошибкой */
+.auth-input__field--error,
+.auth-input__field--error:not(:placeholder-shown),
+.auth-input__field--error:focus {
+  background: #ffebeb;
+  border-color: #f25f5c;
+}
+
+/* звёздочка после текста */
+.auth-input__mark {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  font-size: 14px;
+  line-height: 1;
+  color: #f25f5c;
+  white-space: pre;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.auth-input__mirror {
+  visibility: hidden;
+}

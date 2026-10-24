@@ -1,0 +1,48 @@
+.expenses-table {
+  display: flex;
+  flex-direction: column;
+  /* высоту карточки задаёт форма справа, таблица внутри скроллится */
+  height: 0;
+  min-height: 100%;
+}
+
+.expenses-table__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 20px;
+  align-items: center;
+  padding: 7px 0;
+  font-size: 12px;
+}
+
+.expenses-table__row--head {
+  margin-top: 28px;
+  padding: 0 0 8px;
+  color: var(--gray);
+  border-bottom: 0.5px solid var(--gray);
+}
+
+.expenses-table__body {
+  flex: 1;
+  min-height: 0;
+  padding-right: 8px;
+}
+
+.expenses-table__delete {
+  color: var(--gray);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.expenses-table__delete:hover {
+  color: var(--purple);
+}
+
+@media (max-width: 900px) {
+  .expenses-table {
+    height: auto;
+    min-height: 0;
+  }
+  .expenses-table__body {
+    max-height: 400px;
+  }
+}

@@ -1,16 +1,53 @@
-# React + Vite
+# Проект: SkyproWallet
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SkyproWallet — веб-приложение для управления личными финансами. С его помощью можно добавлять и удалять расходы, указывать категории и даты, а также анализировать свои траты с помощью диаграмм.
 
-Currently, two official plugins are available:
+Проект разработан в рамках обучения frontend-разработке на React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Стек технологий
 
-## React Compiler
+- **React** — создание пользовательского интерфейса
+- **Vite** — сборка и запуск проекта
+- **React Router DOM** — навигация между страницами
+- **JavaScript** — логика приложения
+- **CSS** — стилизация интерфейса
+- **ESLint** — проверка качества кода
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Реализованный функционал
 
-## Expanding the ESLint configuration
+- Авторизация и регистрация пользователей
+- Добавление новых расходов
+- Удаление расходов из списка
+- Выбор категории и даты расхода
+- Валидация форм
+- Отображение расходов в таблице
+- Анализ расходов с помощью диаграмм
+- Навигация между страницами приложения
+- Работа с API для получения и отправки данных
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Запуск проекта
+
+### 1. Клонирование репозитория
+
+Откройте терминал и выполните команды:
+
+```bash
+git clone https://github.com/maloyyyt/skypro-wallet 
+cd skypro-wallet
+```
+
+### 2. Установка зависимостей
+
+```bash
+npm install
+```
+
+### 3. Запуск проекта
+
+```bash
+npm run dev
+```
+
+После запуска откройте адрес, который появится в терминале. Обычно это:
+
+`http://localhost:5174`
